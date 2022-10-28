@@ -49,37 +49,29 @@ oclif, execa(, inquirer)でオリジナルコマンドをつくろう
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
 -->
 
-# コード
+# oclif
 
+* heroku(SalesForce)が作っているTypeScript製cli作成ツール
+  * https://github.com/oclif/oclif
+* execa, inquirerを併用することで、コマンドを実行するオリジナルコマンドが作れる
 
-```ts {all|5}
-  async run(): Promise<void> {
-    const { flags } = await this.parse(Commit);
-    
-    try {
-      const result = await this.commit("test commit2", "b");
-      this.log(result);
-    } catch (e) {
-      this.errorMessage(e);
-    }
-  }
-```
+---
 
-<arrow v-click="3" x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
+# execa
 
-[^1]: [Learn More](https://sli.dev/guide/syntax.html#line-highlighting)
+> This package improves child_process methods
 
-<style>
-.footnotes-sep {
-  @apply mt-20 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
-}
-</style>
+* 最適化しつつコマンド実行してくれるJSライブラリ
+* https://github.com/sindresorhus/execa
+
+# inquirer
+* 応答式のコマンドを作成できるJSライブラリ
+* https://github.com/SBoudrias/Inquirer.js
+
+--- 
+
+kaurtaさんのコマンド + brunoさんのgitmoji-cを参考に
+ブランチ名を自動でくっつけてくれるgit commit代替コマンドをつくる
 
 ---
 
@@ -122,28 +114,3 @@ The last comment block of each slide will be treated as slide notes. It will be 
 }
 </style>
 
----
-
-# oclif
-
-* heroku(SalesForce)が作っているTypeScript製cli作成ツール
-  * https://github.com/oclif/oclif
-* execa, inquirerを併用することで、コマンドを実行するオリジナルコマンドが作れる
-
----
-
-# execa
-
-> This package improves child_process methods
-
-* 最適化しつつコマンド実行してくれるJSライブラリ
-* https://github.com/sindresorhus/execa
-
-# inquirer
-* 応答式のコマンドを作成できるJSライブラリ
-* https://github.com/SBoudrias/Inquirer.js
-
---- 
-
-kaurtaさんのコマンド + brunoさんのgitmoji-cを参考に
-ブランチ名を自動でくっつけてくれるgit commit代替コマンドをつくる
