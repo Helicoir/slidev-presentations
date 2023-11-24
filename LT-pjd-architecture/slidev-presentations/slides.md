@@ -23,7 +23,7 @@ drawings:
 css: unocss
 ---
 
-# PDJ アーキテクチャ紹介
+# PDJ フロント アーキテクチャ紹介
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
@@ -124,7 +124,7 @@ export default CoordinatesPage;
 
 ---
 
-# SSR + SSG
+# おまけ hydration
 
 ```ts {all|4|10-22|13|17-20}
 export const MapDehydratedPropsHelper = function ({
@@ -153,7 +153,7 @@ const formatDehydratedQueries = (
 
 ---
 
-# SSR + SSG
+# おまけ hydration
 
 ```ts {5|10-16|13-15}
 export const MapDehydratedPropsHelper = function ({
