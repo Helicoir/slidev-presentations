@@ -3,7 +3,7 @@
 theme: seriph
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://source.unsplash.com/collection/94734566/1920x1080
+background: https://picsum.photos/1920/1080
 # apply any windi css classes to the current slide
 class: 'text-center'
 # https://sli.dev/custom/highlighters.html
@@ -110,6 +110,8 @@ whimsical参照
     * Next.js独自のやり方が多すぎる
     * ベンダーロックインな機能も多く、Vercel上に構築せざるを得なくなりそう
     * SSRサーバーがシンプルに負荷高くて高い
+
+---
 
 # Reactの最新機能のうちSSRが絡む領域は、難しすぎてついていけないから
 
